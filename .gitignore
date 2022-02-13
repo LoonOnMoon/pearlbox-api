@@ -25,6 +25,11 @@ _UpgradeReport_Files/
 bin/
 obj/
 TestResults/
+Migrations/
+###########################
+# Environment appsettings #
+###########################
+**/appsettings.*.json
 ###################
 # Web publish log #
 ###################

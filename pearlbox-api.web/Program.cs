@@ -1,6 +1,10 @@
+using pearlbox_api.business.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+StartupExtensions.ConfigureServices(builder.Services, builder.Environment.EnvironmentName);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
