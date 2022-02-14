@@ -1,4 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
+using pearlbox_api.business.Services;
 
 namespace pearlbox_api.business.Extensions
 {
@@ -8,7 +9,7 @@ namespace pearlbox_api.business.Extensions
 		{
 			data.Extensions.StartupExtensions.ConfigureServices(services, EnvironmentName);
 
-			// services.AddScoped<IQuestionService, QuestionService>();
+			services.AddScoped<IAuthenticationService, AuthenticationService>();
 			// services.AddScoped<IAnswerService, AnswerService>();
 			// services.AddScoped<ITestService, TestService>();
 			// services.AddScoped<ICategoryService, CategoryService>();

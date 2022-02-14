@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace pearlbox_api.data.Models
+namespace pearlbox_api.data.DatabaseObjects
 {
     public class BaseEntity
     {
