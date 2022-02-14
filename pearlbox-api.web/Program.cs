@@ -1,4 +1,5 @@
 using pearlbox_api.business.Extensions;
+using pearlbox_api.web.Infrastructure.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +24,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseMiddleware(typeof(ExceptionHandlingMiddleware));
 
 app.MapControllers();
 

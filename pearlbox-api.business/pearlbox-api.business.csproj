@@ -9,4 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\pearlbox-api.data\pearlbox-api.data.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.2" />
+  </ItemGroup>
 </Project>
