@@ -4,6 +4,7 @@ namespace pearlbox_api.business.Services
 {
     public interface IAuthenticationService
     {
-        Task RegisterUser(UserDetails userDetails);
+        Task<string> SignUpUser(SignUpUserDetails userDetails);
+        Task<string> SignInUser(SignInWithPasswordUserDetails userDetails);
     }
 }
